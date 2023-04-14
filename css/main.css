@@ -191,7 +191,28 @@ button {
   @media (max-width: 768px) {
     .video_ {
       padding-bottom: 75%; /* proporção 4:3 (360/480) */
+      margin-bottom: 1rem;
     }
   }
 
+  .footer {
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+}
 
+.footer-contato {
+    font-size: 14px;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+
+/* Estilos responsivos para o footer em dispositivos móveis */
+@media (max-width: 767px) {
+    .footer-contato {
+        font-size: 12px;
+    }
+}
