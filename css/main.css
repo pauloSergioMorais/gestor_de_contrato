@@ -145,7 +145,7 @@ main {
     text-transform: uppercase;
 }
 
-button {
+ button {
     color: black;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
@@ -170,7 +170,7 @@ button {
     color: #fff;
   }
 
-  .video_ {
+  .video_eps {
     position: relative;
     overflow: hidden;
     padding-bottom: 56.25%; /* proporção 16:9 (360/640) */
@@ -178,7 +178,7 @@ button {
     margin-bottom: 3rem;
   }
   
-  .video_ iframe {
+  .video_eps iframe {
     padding-top: 3rem;
     position: absolute;
     top: 0;
@@ -189,16 +189,18 @@ button {
   
   /* Media query para telas com largura máxima de 768 pixels (por exemplo, dispositivos móveis) */
   @media (max-width: 768px) {
-    .video_ {
+    .video_eps {
       padding-bottom: 75%; /* proporção 4:3 (360/480) */
       margin-bottom: 1rem;
     }
   }
 
+
   .footer {
     background-color: black;
     padding: 20px 0;
     text-align: center;
+    display: flex;
 }
 
 .footer-contato {
@@ -211,8 +213,12 @@ button {
 
 
 /* Estilos responsivos para o footer em dispositivos móveis */
-@media (max-width: 767px) {
-    .footer-contato {
-        font-size: 12px;
-    }
+
+
+@media all and (max-width: 768px){
+    .footer .footer-contato {
+    text-align: center;
+}
+
+
 }
